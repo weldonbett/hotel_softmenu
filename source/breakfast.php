@@ -65,43 +65,6 @@ if(!isset($_SESSION['user'])){
 <ul><li><a href="index.php" style="text-decoration:none" onclick=" 
 
 
-<? 
-
-/*	
-	
-$host="localhost"; // Host name
-$username="root"; // Mysql username
-$password=""; // Mysql password
-$db_name="softmenu"; // Database name
-$tbl_name="ses"; // Table name
-$no=$_SESSION['cust'];
-// Connect to server and select databse.
-mysql_connect($host, $username, $password)or die("cannot connect");
-mysql_select_db("$db_name")or die("cannot select DB");
-
-
-
-
-
-$del ="UPDATE $tbl_name
-SET sta = '0'
-WHERE cust = '$no'";
-
-$result=mysql_query($del) or die(mysql_error());
-
-
-
-unset($_SESSION['cust']);
-
-	header('Location: index.php');
-	
-
-
-*/
- 
-  ?>
-
-
 
 
 
@@ -125,7 +88,7 @@ unset($_SESSION['cust']);
 
 
 
-				
+		// place order		
                 $db = mysql_connect("localhost", "root", "");
                 $sl = mysql_select_db("softmenu", $db);
                
